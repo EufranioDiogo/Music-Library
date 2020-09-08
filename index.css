@@ -1,0 +1,268 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: RobotoB;
+    src: url('Roboto-Bold.ttf');
+    font-family: RobotoL;
+    src: url('Roboto-Light.ttf');
+}
+h1{
+    color: #e4e4e4;
+    font-family: RobotoL;
+    font-weight: 700;
+}
+#aside-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 900px;
+    width: 20%;
+    background-color: #05001a;
+}
+#profile-info{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    top: 10%;
+}
+#profile-info img{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+#profile-info span{
+    margin-left: 10px;
+    font-family: RobotoL, Arial, Helvetica, sans-serif;
+}
+#profile-info span a{
+    position: relative;
+    top: 18%;
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+#options{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    top: 35%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+#options ul{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #8b8b8b;
+}
+#options ul li{
+    list-style-type: none;
+    margin: 10px 0;
+    list-style-position: inside;
+}
+#options ul li a{
+    text-decoration: none;
+    color: #8b8b8b;
+    font-family: RobotoL, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+#options ul li a:hover{
+    color: #fff;
+}
+#aside-right{
+    position: absolute;
+    width: 75%;
+    height: 900px;
+    right: 0;
+    background-color: #0d0030;
+    padding-left: 68px;
+}
+#div-header-aside-right{
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+#div-header-aside-right input#search-field{
+    border: none;
+    width: 35%;
+    position: absolute;
+    color: #8b8b8b;
+    bottom: 0;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: #120042;
+    font-family: RobotoL, Arial, Helvetica, sans-serif;
+}
+#div-featured-playlists{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    font-family: RobotoL, Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#div-featured-playlists h1{
+    width: 100%;
+    padding-bottom: 10px;
+}
+#featured-playlists-view{
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: 1020px;
+    height: 90%;
+    bottom: 0;
+    overflow-x: auto;
+    padding-right: 30px;
+}
+#featured-playlists-view .music-featured-music{
+    position: relative;
+    flex: 0 0 auto;
+    width: 350px;
+    height: 100%;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+#featured-playlists-view .music-featured-music img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#featured-playlists-view .music-featured-music h2{
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-bottom: 10px;
+}
+#featured-playlists-view .music-featured-music h3{
+    font-size: 12px;
+    color: #c9c9c9;
+}
+
+#profile-views{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    font-family: RobotoL, Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+#profile-views h1{
+    position: relative;
+    margin: 10px 0;
+}
+#profile-views .user-profile-view{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+#profile-views .user-profile-view:hover{
+    background-color: #05001a;
+}
+.user-profile-view img{
+    position: relative;
+    width: 21%;
+    object-fit: cover;
+    object-position: 0 -10px;
+    height: 100%;
+    left: 0;
+    border-radius: 10px;
+}
+.user-profile-view .span-details-user{
+    width: 50%;
+    height: 100%;
+    margin-left: 10px;
+    padding: 2.5px 0;
+    color: #c9c9c9;
+}
+.user-profile-view .span-details-user h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.user-profile-view .span-details-user h3{
+    font-size: 10px;
+}
+.user-profile-view .numbers-albuns-profile h3{
+    position: relative;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8b8b8b;
+    font-size: 14px;
+}
+#div-tracks{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    top: 56%;
+    right: 5%;
+}
+#div-tracks h1{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#slider-tracks{
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    bottom: 0;
+    width: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 175px;
+    margin-top: 10px;
+}
+#slider-tracks > div{
+    flex-shrink: 0;
+}
+.track-preview{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    width: 125px;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.track-preview:hover{
+    background-color: #0d0041;
+}
+.track-preview img{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.track-preview h2{
+    font-size: 20px;
+    font-family: RobotoL;
+    margin-bottom: 5px;
+    color: #e4e4e4;
+}
+.track-preview h3{
+    font-size: 12px;
+    font-family: RobotoL;
+    color: #e4e4e4;
+}
